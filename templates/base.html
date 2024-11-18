@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ abs_path | safe }}static/styles.css?v=1">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  {% include "nav.njk" with context %}
+  <main>{% block content %}{% endblock %}</main>
+  {% block javascript %}{% endblock %}
+</body>
+</html>
+

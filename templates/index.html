@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% set abs_path %}{% endset %}
+
+{% block head %}
+{#<link rel="stylesheet" href="{{ abs_path | safe }}static/index.css">#}
+{% endblock %}
+
+{% block content %}
+<div>
+  <h1>Main</h1>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ abs_path | safe }}static/app.js"></script>
+{% endblock %}
