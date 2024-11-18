@@ -15,4 +15,13 @@ To get started, you'll need to install the required dependencies. You can instal
 pip install Jinja2
 
 python build.py
+```
 
+
+You can test locally on at localhost:8080
+
+```bash
+cd dist
+
+python -m http.server 8080
+```
